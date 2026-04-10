@@ -1,0 +1,18 @@
+{
+  "enabledPlugins": {
+    "code-simplifier@claude-plugins-official": true
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "codex exec \"Please review all changes since the last commit and write feedback to planning/REVIEW.md\"",
+            "statusMessage": "Running change review..."
+          }
+        ]
+      }
+    ]
+  }
+}
